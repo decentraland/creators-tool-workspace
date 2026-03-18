@@ -19,6 +19,6 @@
 [submodule "wearable-preview"]
 	path = wearable-preview
 	url = git@github.com:decentraland/wearable-preview.git
-[submodule "gltf-validator"]
-	path = gltf-validator
-	url = git@github.com:decentraland/gltf-validator.git
+[submodule "gltf-validator-ts"]
+	path = gltf-validator-ts
+	url = git@github.com:decentraland/gltf-validator-ts.git

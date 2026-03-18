@@ -29,7 +29,7 @@ For creator documentation, see the [Decentraland Creator Docs](https://docs.dece
 | Submodule | Description |
 |-----------|-------------|
 | **[wearable-preview](wearable-preview/)** | Renders interactive previews of wearables and emotes |
-| **[gltf-validator](gltf-validator/)** | Validates glTF 3D models for Decentraland compatibility |
+| **[gltf-validator-ts](gltf-validator-ts/)** | Validates glTF 3D models for Decentraland compatibility (TypeScript) |
 
 ---
 
