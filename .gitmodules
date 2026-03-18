@@ -1,0 +1,24 @@
+[submodule "builder"]
+	path = builder
+	url = git@github.com:decentraland/builder.git
+[submodule "builder-client"]
+	path = builder-client
+	url = git@github.com:decentraland/builder-client.git
+[submodule "builder-server"]
+	path = builder-server
+	url = git@github.com:decentraland/builder-server.git
+[submodule "urn-resolver"]
+	path = urn-resolver
+	url = git@github.com:decentraland/urn-resolver.git
+[submodule "creator-hub"]
+	path = creator-hub
+	url = git@github.com:decentraland/creator-hub.git
+[submodule "js-sdk-toolchain"]
+	path = js-sdk-toolchain
+	url = git@github.com:decentraland/js-sdk-toolchain.git
+[submodule "wearable-preview"]
+	path = wearable-preview
+	url = git@github.com:decentraland/wearable-preview.git
+[submodule "gltf-validator"]
+	path = gltf-validator
+	url = git@github.com:decentraland/gltf-validator.git
