@@ -8,28 +8,49 @@ For creator documentation, see the [Decentraland Creator Docs](https://docs.dece
 
 ## 📦 Submodules Overview
 
-### Creator Tools
+### Builder Ecosystem (Web)
+
+Web-based scene and wearable editor.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[creator-hub](creator-hub/)** | Electron-based desktop application for creating, editing, and deploying Decentraland scenes |
-| **[builder](builder/)** | Web-based 3D scene editor for Decentraland |
-| **[builder-client](builder-client/)** | Client library for the Builder application |
-| **[builder-server](builder-server/)** | Backend service for the Builder application |
+| **[builder](builder/)** | Web frontend — drag-and-drop 3D editor for scenes and wearables |
+| **[builder-server](builder-server/)** | Backend API — persistence, authentication, and curation workflows |
+| **[builder-client](builder-client/)** | Programmatic SDK — TypeScript client for interacting with builder-server |
+| **[wearable-preview](wearable-preview/)** | 3D preview — renders wearables and emotes, embedded via iframe in builder |
 
-### SDK & Development
+```
+Builder (UI) ←→ Builder Server (API) ←→ Builder Client 
+                      ↕
+              Wearable Preview (iframe)
+```
+
+### Creator Hub & SDK (Desktop)
+
+Desktop application + development toolchain + deployments.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[js-sdk-toolchain](js-sdk-toolchain/)** | Toolchain to build JavaScript & TypeScript scenes for Decentraland (SDK7) |
-| **[urn-resolver](urn-resolver/)** | URN resolver for Decentraland assets (`@dcl/urn-resolver`) |
+| **[creator-hub](creator-hub/)** | Electron app — desktop environment for creating and deploying scenes |
+| **[js-sdk-toolchain](js-sdk-toolchain/)** | SDK7 — ECS, CLI, compilation, and development commands |
+| **[linker-dapp](linker-dapp/)** | Deployment dApp — web GUI for deploying scenes to LAND/Worlds, managing ACLs and storage |
 
-### Preview & Validation
+```
+Creator Hub (Desktop) → js-sdk-toolchain (SDK + CLI)
+                              ↓
+                     linker-dapp (Deploy GUI)
+                              ↓
+                     World content server / Catalyst
+```
+
+### Shared Libraries
+
+Cross-cutting libraries used by both ecosystems.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[wearable-preview](wearable-preview/)** | Renders interactive previews of wearables and emotes |
-| **[gltf-validator-ts](gltf-validator-ts/)** | Validates glTF 3D models for Decentraland compatibility (TypeScript) |
+| **[urn-resolver](urn-resolver/)** | Resolves Decentraland asset URNs to content server URLs (`@dcl/urn-resolver`) |
+| **[gltf-validator-ts](gltf-validator-ts/)** | Validates glTF/GLB 3D models against the official spec (TypeScript) |
 
 ---
 
