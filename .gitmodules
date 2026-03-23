@@ -22,3 +22,6 @@
 [submodule "gltf-validator-ts"]
 	path = gltf-validator-ts
 	url = git@github.com:decentraland/gltf-validator-ts.git
+[submodule "linker-dapp"]
+	path = linker-dapp
+	url = git@github.com:decentraland/linker-dapp.git
