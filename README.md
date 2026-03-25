@@ -14,10 +14,10 @@ Web-based scene and wearable editor.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[builder](builder/)** | Web frontend — drag-and-drop 3D editor for scenes and wearables |
-| **[builder-server](builder-server/)** | Backend API — persistence, authentication, and curation workflows |
-| **[builder-client](builder-client/)** | Programmatic SDK — TypeScript client for interacting with builder-server |
-| **[wearable-preview](wearable-preview/)** | 3D preview — renders wearables and emotes, embedded via iframe in builder |
+| **[builder](https://github.com/decentraland/builder)** | Web frontend — drag-and-drop 3D editor for scenes and wearables |
+| **[builder-server](https://github.com/decentraland/builder-server)** | Backend API — persistence, authentication, and curation workflows |
+| **[builder-client](https://github.com/decentraland/builder-client)** | Programmatic SDK — TypeScript client for interacting with builder-server |
+| **[wearable-preview](https://github.com/decentraland/wearable-preview)** | 3D preview — renders wearables and emotes, embedded via iframe in builder |
 
 ```
 Builder (UI) ←→ Builder Server (API) ←→ Builder Client 
@@ -31,9 +31,9 @@ Desktop application + development toolchain + deployments.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[creator-hub](creator-hub/)** | Electron app — desktop environment for creating and deploying scenes |
-| **[js-sdk-toolchain](js-sdk-toolchain/)** | SDK7 — ECS, CLI, compilation, and development commands |
-| **[linker-dapp](linker-dapp/)** | Deployment dApp — web GUI for deploying scenes to LAND/Worlds, managing ACLs and storage |
+| **[creator-hub](https://github.com/decentraland/creator-hub)** | Electron app — desktop environment for creating and deploying scenes |
+| **[js-sdk-toolchain](https://github.com/decentraland/js-sdk-toolchain)** | SDK7 — ECS, CLI, compilation, and development commands |
+| **[linker-dapp](https://github.com/decentraland/linker-dapp)** | Deployment dApp — web GUI for deploying scenes to LAND/Worlds, managing ACLs and storage |
 
 ```
 Creator Hub (Desktop) → js-sdk-toolchain (SDK + CLI)
@@ -49,8 +49,8 @@ Cross-cutting libraries used by both ecosystems.
 
 | Submodule | Description |
 |-----------|-------------|
-| **[urn-resolver](urn-resolver/)** | Resolves Decentraland asset URNs to content server URLs (`@dcl/urn-resolver`) |
-| **[gltf-validator-ts](gltf-validator-ts/)** | Validates glTF/GLB 3D models against the official spec (TypeScript) |
+| **[urn-resolver](https://github.com/decentraland/urn-resolver)** | Resolves Decentraland asset URNs to content server URLs (`@dcl/urn-resolver`) |
+| **[gltf-validator-ts](https://github.com/decentraland/gltf-validator-ts)** | Validates glTF/GLB 3D models against the official spec (TypeScript) |
 
 ---
 
